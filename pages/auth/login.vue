@@ -80,6 +80,33 @@ export default {
 
 
 <style lang="scss" scoped>
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 20px;
+height: 20px;
+left: 99px;
+top: 0px;
+opacity: 0.5;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+  /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.2;
+
+
+  width: 12px;
+  height: 12px;
+  /* General/White */
+
+  background: #FFFFFF;
+  opacity: 0.5;
+}
 .inputs{
     input{
         display: flex;
