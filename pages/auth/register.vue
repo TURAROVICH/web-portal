@@ -200,4 +200,10 @@ color: #252A36;
         background: url("@/assets/imgs/auth/s-4.png") no-repeat;
     }
 }
+
+@media (min-width:1440px) {
+    .swiper{
+        width: 37%;
+    }
+}
 </style>
