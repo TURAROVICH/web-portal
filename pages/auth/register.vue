@@ -65,7 +65,7 @@
 
 <script>
 import 'swiper/swiper.scss'
-import 'swiper/swiper-bundle.css'
+// import 'swiper/swiper-bundle.css'
 export default {
     mounted(){
         const Swiper = require('swiper/swiper-bundle.min.js');
