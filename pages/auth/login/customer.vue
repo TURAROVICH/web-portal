@@ -12,7 +12,7 @@
             Нет аккаунта?
         </div>
 
-        <div class="btn btn-reg">
+        <div @click="$router.push('/auth/register/customer')" class="btn btn-reg">
             <span>Зарегистрироваться</span>
         </div>
         <div class="about-reg">
@@ -70,7 +70,7 @@ text-align: center;
 color: #252A36;
 
 }
-input[type=text]{
+input{
 padding: 16px;
 outline: none;
 height: 56px;
