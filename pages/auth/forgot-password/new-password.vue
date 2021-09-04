@@ -22,7 +22,16 @@
 
 
 <style lang="scss" scoped>
-
+input[type=text]{
+padding: 16px;
+outline: none;
+height: 56px;
+background: #FFFFFF;
+border: 1px solid rgba(106, 116, 137, 0.3);
+box-sizing: border-box;
+border-radius: 16px;
+margin: 16px 0;
+}
 .explain-text{
     /* Caption/Regular */
     margin: 32px 0;
