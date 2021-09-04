@@ -13,7 +13,7 @@
     </div>
     </div>
 
-    <div class="flex flex-col justify-center">
+    <div v-else class="flex flex-col justify-center">
         <div class="text-center explain-text">
             Email отправлен!
         </div>
