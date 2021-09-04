@@ -22,7 +22,7 @@
 
 
 <style lang="scss" scoped>
-input[type=text]{
+input{
 padding: 16px;
 outline: none;
 height: 56px;
