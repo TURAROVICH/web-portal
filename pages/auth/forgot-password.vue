@@ -3,19 +3,13 @@
        <div class="content w-full py-16">
            <div class="w-4/5 mx-auto min-h-full">
                 <div class="title text-center">
-                 Регистрация
+                    Войти
                 </div>
-                <div class="nav my-10 flex items-center justify-center">
-                    <div class="container-nav flex items-center justify-center w-4/5 bg-gray-200 rounded-md">
-                    <nuxt-link active-class="active" to="/auth/register/executor" class="no-underline btn-link">
-                       <span>Исполнитель</span>
-                    </nuxt-link>
-                     <nuxt-link active-class="active" to="/auth/register/customer" class="no-underline btn-link ">
-                       <span>Заказчик</span>
-                    </nuxt-link>
-                    </div>
-                </div>
+                
 
+                <div class="have-account">
+                    <span>Нет учетной записи?</span><span @click="$router.push('/auth/register/customer')">Зарегистрируйтесь!</span>
+                </div>
               <nuxt-child/>
              
            </div>
@@ -56,7 +50,6 @@
             </svg>
 
         </div>
-        
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -67,7 +60,6 @@
 import 'swiper/swiper.scss'
 // import 'swiper/swiper-bundle.css'
 export default {
-    layout:'auth',
     mounted(){
         const Swiper = require('swiper/swiper-bundle.min.js');
         new Swiper(".swiper", {
@@ -82,6 +74,33 @@ export default {
 
 
 <style lang="scss" scoped>
+.have-account{
+    padding: 16px;
+    margin: 16px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #F1F3F8;
+    width: 80%;
+    span{
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height, or 129% */
+
+        text-align: center;
+
+        color: #000000;
+
+    }
+    span:nth-child(2)
+        {
+           color: #2CC84D;
+        }
+}
 .inputs{
     input{
         display: flex;
@@ -163,12 +182,12 @@ color: #252A36;
     top: 0;
     right: 0;
     .swiper-slide{
-        background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         position: relative;
+        height:   100vh;
         svg{
             position: absolute;
             top:30px;
@@ -192,21 +211,21 @@ color: #252A36;
 
     .swiper-slide:nth-child(1){
         background: url("@/assets/imgs/auth/s-1.png") no-repeat;
+        background-size:100% 100vh;
     }
     .swiper-slide:nth-child(2){
         background: url("@/assets/imgs/auth/s-2.png") no-repeat;
+        background-size:100% 100vh;
     }
      .swiper-slide:nth-child(3){
         background: url("@/assets/imgs/auth/s-3.png") no-repeat;
+        background-size:100% 100vh;
     }
      .swiper-slide:nth-child(4){
         background: url("@/assets/imgs/auth/s-4.png") no-repeat;
+        background-size:100% 100vh;
     }
 }
 
-@media (min-width:1440px) {
-    .swiper{
-        width: 37%;
-    }
-}
+
 </style>

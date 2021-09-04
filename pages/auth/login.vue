@@ -66,6 +66,7 @@
 import 'swiper/swiper.scss'
 // import 'swiper/swiper-bundle.css'
 export default {
+    layout:'auth',
     mounted(){
         const Swiper = require('swiper/swiper-bundle.min.js');
         new Swiper(".swiper", {

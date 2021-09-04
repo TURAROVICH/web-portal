@@ -1,0 +1,91 @@
+
+.form__group {
+    position: relative;
+
+}
+
+.form__field {
+      width:100%;
+    height: 56px;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    /* Text/Tertiary */
+
+    border: 1px solid rgba(106, 116, 137, 0.3);
+    box-sizing: border-box;
+    border-radius: 16px;
+    outline: none;
+  transition: all 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  display: block;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Text/Secondary */
+
+    color: rgba(106, 116, 137, 0.5);
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* Text/Secondary */
+
+    color: rgba(106, 116, 137, 0.5);
+    
+  }
+  padding-bottom: 6px;  
+
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+
+
+
+.profil{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  
+    .fullname{
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #252A36;
+    }
+}
