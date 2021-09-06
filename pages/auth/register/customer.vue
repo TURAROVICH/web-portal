@@ -1,6 +1,6 @@
 <template>
     <div class="form  flex flex-col ">
-       <v-select :options="options" id="select" class="select" style="width:88%;" v-model="selected"></v-select>
+       <v-select :options="options" id="select" class="select"  v-model="selected"></v-select>
         <div class="flex items-center gap-2 relative">
             <input type="text"   placeholder="Логин">
                 <svg class="s-1"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,11 +280,29 @@ margin: 30px 0 0 0;
     input{
         width:570px;
     }
+    .select{
+        width: 86%;
+    }
 }
 @media screen and (max-width:1450px) {
     input{
         width:470px;
     }
-}
 
+}
+@media (max-width:1300px) {
+    input{
+        width: 367px;
+    }
+    .btn{
+        width:367px;
+    }
+    .about-reg{
+        width: 367px;
+    }
+    .select{
+        width: 81%;
+    }
+
+}
 </style>

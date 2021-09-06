@@ -1,7 +1,7 @@
 <template>
     <div class="form  flex flex-col ">
-        <input type="text"  placeholder="телефон">
-        <div class="flex items-center gap-2 relative">
+        <input type="text" class="l"  placeholder="телефон">
+        <div class="flex items-center i gap-2 relative">
             <input type="text"   placeholder="никнейм">
                 <svg class="s-1"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -14,7 +14,7 @@
                 </div>
 
         </div>
-        <div class="flex items-center gap-2 relative">
+        <div class="flex items-center i gap-2 relative">
             <input v-model="pass1" type="password"   placeholder="Пароль">
                 <svg class="s-2" style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,7 +27,7 @@
                 </div>
 
         </div>
-        <input v-model="pass2" type="password"  placeholder="Повторите пароль">
+        <input class="l" v-model="pass2" type="password"  placeholder="Повторите пароль">
         <div v-if="coincide" class="flex gap-2 items-center">
             <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.3332 1L3.99984 8.33333L0.666504 5" stroke="#5DD13A" stroke-linecap="round" stroke-linejoin="round"/>
@@ -247,5 +247,10 @@ margin: 30px 0 0 0;
         width:470px;
     }
 }
-
+@media (max-width:1231px) {
+    .l{
+        width: 411px;
+    }
+    
+}
 </style>
