@@ -57,8 +57,8 @@
 </template>
 
 <script>
-// import 'swiper/swiper.scss'
-import 'swiper/swiper-bundle.css'
+import 'swiper/swiper.scss'
+// import 'swiper/swiper-bundle.css'
 export default {
     layout:'auth',
     mounted(){
