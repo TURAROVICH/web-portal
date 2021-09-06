@@ -177,18 +177,15 @@ line-height: 47px;
 color: #252A36;
 }
 .swiper{
-    width: 50%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
+    width: 100%;
+    
     .swiper-slide{
+        background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        height:   100vh;
         svg{
             position: absolute;
             top:30px;
@@ -212,21 +209,25 @@ color: #252A36;
 
     .swiper-slide:nth-child(1){
         background: url("@/assets/imgs/auth/s-1.png") no-repeat;
-        background-size:100% 100vh;
+        background-size:100% 100%;
     }
     .swiper-slide:nth-child(2){
         background: url("@/assets/imgs/auth/s-2.png") no-repeat;
-        background-size:100% 100vh;
+        background-size:100% 100%;
+
     }
      .swiper-slide:nth-child(3){
         background: url("@/assets/imgs/auth/s-3.png") no-repeat;
-        background-size:100% 100vh;
+        background-size:100% 100%;
+
     }
      .swiper-slide:nth-child(4){
         background: url("@/assets/imgs/auth/s-4.png") no-repeat;
-        background-size:100% 100vh;
+        background-size:100% 100%;
+
     }
 }
+
 
 
 </style>

@@ -156,12 +156,10 @@ font-size: 40px;
 line-height: 47px;
 color: #252A36;
 }
+
 .swiper{
-    width: 50%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
+    width: 100%;
+    
     .swiper-slide{
         background-size: cover;
         background-position: center;
@@ -192,21 +190,37 @@ color: #252A36;
 
     .swiper-slide:nth-child(1){
         background: url("@/assets/imgs/auth/s-1.png") no-repeat;
+        background-size:100% 100%;
     }
     .swiper-slide:nth-child(2){
         background: url("@/assets/imgs/auth/s-2.png") no-repeat;
+        background-size:100% 100%;
+
     }
      .swiper-slide:nth-child(3){
         background: url("@/assets/imgs/auth/s-3.png") no-repeat;
+        background-size:100% 100%;
+
     }
      .swiper-slide:nth-child(4){
         background: url("@/assets/imgs/auth/s-4.png") no-repeat;
+        background-size:100% 100%;
+
     }
 }
 
-@media (min-width:1440px) {
-    .swiper{
-        width: 37%;
+// @media (min-width:1440px) {
+//     .swiper{
+//         width: 37%;
+//     }
+// }
+
+@media screen and (min-width:1450px) {
+    .nav{
+        width: 100%;
     }
+
 }
+
+
 </style>

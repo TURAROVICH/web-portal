@@ -206,7 +206,7 @@ color: #252A36;
 
 }
 input{
-width: 430px;
+width: 470px;
 padding: 16px;
 outline: none;
 height: 56px;
@@ -264,6 +264,27 @@ color: #252A36;
 margin: 30px 0 0 0;
 
 }
+@media screen and (min-width:1450px) {
+    input{
+        width:530px;
+    }
+    .btn{
+        width:94%;
+    }
+    .about-reg{
+        width: 94%;
+    }
 
+}
+@media screen and (min-width:1650px) {
+    input{
+        width:570px;
+    }
+}
+@media screen and (max-width:1450px) {
+    input{
+        width:470px;
+    }
+}
 
 </style>

@@ -14,6 +14,7 @@
                 <div class="profile">
                     <img width="128" height="128" src="@/assets/imgs/test/profile.png" alt="">
                     <div class="title">Камила Ковалёва</div>
+                    <div class="is-online"></div>
                 </div>
 
             <div class="message">
