@@ -75,6 +75,7 @@ align-items: center;
 /* General/White */
 
 color: #FFFFFF;
+opacity: 0.5;
 
 }
 </style>

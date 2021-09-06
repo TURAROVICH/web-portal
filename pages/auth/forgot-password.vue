@@ -65,7 +65,8 @@ export default {
         const Swiper = require('swiper/swiper-bundle.min.js');
         new Swiper(".swiper", {
         pagination: {
-          el: ".swiper-pagination"
+          el: ".swiper-pagination",
+          clickable:true
         },
       });
     }
