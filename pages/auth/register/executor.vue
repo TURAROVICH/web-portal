@@ -40,11 +40,11 @@
             <checkbox desc="Согласен c <nuxt-link to='#' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</nuxt-link> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
         </div> 
-        <div class="btn">
+        <div class="btn cursor-pointer">
             <span>Войти</span>
         </div>
 
-        <div class="about-reg w-11/12">
+        <div class="about-reg w-11/12 cursor-pointer">
             Отмена
         </div>
     </div>

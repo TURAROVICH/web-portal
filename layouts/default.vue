@@ -179,6 +179,8 @@ export default {
     /* General/White */
 
     color: #FFFFFF;
+        opacity: .5;
+
 
     }
     .about:nth-child(3){
@@ -203,6 +205,8 @@ export default {
 
         color: #FFFFFF;
         margin-bottom: 16px;
+        opacity: .5;
+
         }
 
         .link{
@@ -220,6 +224,7 @@ export default {
 
         color: #FFFFFF;
         margin: 4px 0;
+        opacity: .5;
         }
     }
 }
