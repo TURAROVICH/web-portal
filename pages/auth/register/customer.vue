@@ -82,7 +82,7 @@
             <span>Зарегистрироваться</span>
         </div>
 
-        <div @click="$router.push('/auth/register/customer')" class="about-reg w-11/12 cursor-pointer">
+        <div @click="$router.push('/auth/login/customer')" class="about-reg w-11/12 cursor-pointer">
             Отмена
         </div>
     </div>
