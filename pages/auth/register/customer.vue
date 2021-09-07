@@ -2,7 +2,7 @@
     <div class="form  flex flex-col ">
        <!-- <v-select :options="options" id="select" class="select"  v-model="selected"></v-select>
         -->
-        <div  class="select">
+        <div  class="select mb-4">
             <span :class="{'small':selected}">Я являюсь</span> 
             <div class="selected" v-if="selected" v-html="selected"></div>
             <svg @click="modal=!modal" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@
             </div>
 
         </div>
-        <div class="flex items-center g-2 relative">
+        <div class="flex items-center g-2 mb-4 relative">
             <input type="text"   placeholder="Логин">
                 <svg class="s-1"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,7 +27,7 @@
                 </div>
 
         </div>
-            <div v-if="sel==='Юридическое лицо'" class="flex items-center g-2 relative">
+            <div v-if="sel==='Юридическое лицо'" class="flex items-center mb-4 g-2 relative">
             <input type="text"   placeholder="Рабочая почта">
                 <svg class="s-2"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,7 +40,7 @@
 
         </div>
 
-         <div v-if="sel==='Физическое лицо'" class="flex items-center g-2 relative">
+         <div v-if="sel==='Физическое лицо'" class="flex items-center g-2 relative mb-4">
                 <masked-input
       type="text"
       name="phone"
@@ -60,7 +60,7 @@
                 </div>
          </div>
 
-        <div class="flex items-center g-2 ">
+        <div class="flex items-center g-2">
             <input v-model="pass1" type="password"   placeholder="Пароль">
  
 
@@ -74,8 +74,8 @@
 
         </div>
         <div class="checkboxes flex flex-col g-6 my-8 ">
-            <checkbox desc="Согласен на <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>обработку и хранение персональных данных</nuxt-link> "/>
-            <checkbox desc="Согласен c <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</nuxt-link> "/>
+            <checkbox desc="Согласен на <a href='https://osc.gov/Shared%20Documents/Set%20Adobe%20as%20the%20defualt%20PDF%20program.pdf' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>обработку и хранение персональных данных</a> "/>
+            <checkbox desc="Согласен c <a href='https://osc.gov/Shared%20Documents/Set%20Adobe%20as%20the%20defualt%20PDF%20program.pdf' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</a> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
         </div> 
         <div class="btn cursor-pointer">
