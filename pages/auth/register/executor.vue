@@ -36,12 +36,12 @@
 
         </div>
         <div class="checkboxes flex flex-col gap-6 my-8 ">
-            <checkbox desc="Согласен на <nuxt-link to='#' style='color:#2CC84D;margin-left:4px;'>обработку и хранение персональных данных</nuxt-link> "/>
-            <checkbox desc="Согласен c <nuxt-link to='#' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</nuxt-link> "/>
+            <checkbox desc="Согласен на <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>обработку и хранение персональных данных</nuxt-link> "/>
+            <checkbox desc="Согласен c <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</nuxt-link> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
         </div> 
         <div class="btn cursor-pointer">
-            <span>Войти</span>
+            <span>Зарегистрироваться</span>
         </div>
 
         <div class="about-reg w-11/12 cursor-pointer">
@@ -252,5 +252,11 @@ margin: 30px 0 0 0;
         width: 411px;
     }
     
+}
+
+@media (min-width:1784px) {
+    input{
+        width: 88%;
+    }
 }
 </style>

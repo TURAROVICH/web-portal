@@ -70,7 +70,7 @@ text-align: center;
 color: #252A36;
 
 }
-input[type=text]{
+input{
 padding: 16px;
 outline: none;
 height: 56px;

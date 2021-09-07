@@ -167,6 +167,7 @@ color: #252A36;
         align-items: center;
         justify-content: flex-start;
         position: relative;
+     
         svg{
             position: absolute;
             top:30px;
@@ -190,21 +191,29 @@ color: #252A36;
 
     .swiper-slide:nth-child(1){
         background: url("@/assets/imgs/auth/s-1.png") no-repeat;
-        background-size:100% 100%;
+           background-size: cover;
+    background-position: top;
+
     }
     .swiper-slide:nth-child(2){
         background: url("@/assets/imgs/auth/s-2.png") no-repeat;
-        background-size:100% 100%;
+           background-size: cover;
+    background-position: top;
+
 
     }
      .swiper-slide:nth-child(3){
         background: url("@/assets/imgs/auth/s-3.png") no-repeat;
-        background-size:100% 100%;
+           background-size: cover;
+    background-position: top;
+
 
     }
      .swiper-slide:nth-child(4){
         background: url("@/assets/imgs/auth/s-4.png") no-repeat;
-        background-size:100% 100%;
+           background-size: cover;
+    background-position: top;
+
 
     }
 }
