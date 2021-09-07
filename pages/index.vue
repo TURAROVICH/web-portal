@@ -277,7 +277,6 @@ export default {
     border-bottom:  2px solid #F1F3F8;
     display: flex;
     align-items: center;
-    gap: 24px;;
     .search{
       display: flex;
       width: 412px;

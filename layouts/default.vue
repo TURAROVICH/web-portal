@@ -135,7 +135,9 @@ export default {
     display: -ms-flexbox;
     display: -ms-flexbox;
     align-items: center;
-    gap: 20px;
+    &>a:not(:first-child){
+        margin: 20px 0 0 0;
+    }
     align-items: center;
     -webkit-align-items: center;
     flex-direction: column;
@@ -257,7 +259,9 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap:16px;
+        &>div:nth-child(1){
+            margin-right: 16px;
+        }
         .full-name{
             /* Body/Bold */
 

@@ -287,7 +287,6 @@ color: rgba(106, 116, 137, 0.5);
                 display: flex;
                 align-items: center;
                 position: relative;
-                gap:32px;
                 .title{
                     /* H3/Bold */
 

@@ -147,7 +147,6 @@ color: #252A36;
             .profile{
                 display: flex;
                 align-items: center;
-                gap:32px;
                 .title{
                     /* H3/Bold */
 
