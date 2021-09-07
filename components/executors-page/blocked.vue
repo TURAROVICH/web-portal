@@ -34,10 +34,15 @@
                             </div>
                             <textarea id="about-me" placeholder="Обо мне" cols="30" rows="10"></textarea>
                             <div class="info">Личная информация</div>
-                             <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='number' required />
-                            <label for="nuber" class="form__label">Номер телефона</label>
-                            </div>
+                              <masked-input
+                                type="text"
+                                name="phone"
+                                class="form-control"
+                                v-model="phone"
+                                :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                                :guide="false"
+                                placeholder="номер телефона">
+                                </masked-input>
                              <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='email' required />
                             <label for="email" class="form__label">Email</label>
@@ -321,5 +326,18 @@ color: rgba(106, 116, 137, 0.5);
         }
     }
 
+}
+input{
+      width:100%;
+    height: 56px;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    /* Text/Tertiary */
+
+    border: 1px solid rgba(106, 116, 137, 0.3);
+    box-sizing: border-box;
+    border-radius: 16px;
+    outline: none;
+  transition: all 0.2s;
 }
 </style>

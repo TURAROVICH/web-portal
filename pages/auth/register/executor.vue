@@ -1,6 +1,14 @@
 <template>
     <div class="form  flex flex-col ">
-        <input type="text" class="l"  placeholder="телефон">
+        <masked-input
+      type="text"
+      name="phone"
+      class="form-control"
+      v-model="phone"
+      :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+      :guide="false"
+      placeholder="телефон">
+    </masked-input>
         <div class="flex items-center i gap-2 relative">
             <input type="text"   placeholder="никнейм">
                 <svg class="s-1"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +43,7 @@
             <span style="color:#2CC84D;">Пароли совпадают</span>
 
         </div>
-        <div class="checkboxes flex flex-col gap-6 my-8 ">
+        <div class="checkboxes flex flex-col g-6 my-8 ">
             <checkbox desc="Согласен на <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>обработку и хранение персональных данных</nuxt-link> "/>
             <checkbox desc="Согласен c <nuxt-link to='#' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</nuxt-link> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
@@ -51,6 +59,7 @@
 </template>
 
 <script>
+import MaskedInput from 'vue-text-mask'
 export default {
     data:()=>({
         pass1:'',
@@ -85,12 +94,18 @@ export default {
                this.info2 =false
            }
         })
-    }
+    },
+     components: {
+      MaskedInput
+    },
     
 }
 </script>
 
 <style lang="scss" scoped>
+.g-6 > div:not(:first-child){
+    margin:30px 0 0 0;
+}
 .card{
     width: 144px;
     height: 66px;

@@ -37,10 +37,15 @@
                             <label for="name" class="form__label">Должность руководителя</label>
                             </div>
                             <div style="margin-top:18px;" class="form-title">Контакты</div>
-                            <div class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                            <label for="name" class="form__label">Телефон</label>
-                            </div>
+                            <masked-input
+                                type="text"
+                                name="phone"
+                                class="form-control"
+                                v-model="phone"
+                                :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                                :guide="false"
+                                placeholder="Телефон">
+                                </masked-input>
                             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
                             <label for="name" class="form__label">Email</label>
@@ -270,5 +275,18 @@
         }
     }
 
+}
+input{
+      width:100%;
+    height: 56px;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    /* Text/Tertiary */
+
+    border: 1px solid rgba(106, 116, 137, 0.3);
+    box-sizing: border-box;
+    border-radius: 16px;
+    outline: none;
+  transition: all 0.2s;
 }
 </style>
