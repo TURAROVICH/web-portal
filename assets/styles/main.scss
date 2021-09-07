@@ -110,3 +110,10 @@
       color: #252A36;
     }
 }
+
+.gap-2{
+  display: flex;
+  & > div:nth-child(1){
+    margin-right: 10px;
+  }
+}

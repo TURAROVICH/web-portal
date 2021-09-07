@@ -21,9 +21,11 @@ export default {
 
 <style lang="scss" scoped>
 .checkbox-container{
-    display: flex;
-    align-items: center;
-    gap:10px;
+        display: -webkit-grid;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 5% 95%;
+        align-items: center;
     .checkbox{
     border: 1px solid rgba(106, 116, 137, 0.3);
     box-sizing: border-box;
