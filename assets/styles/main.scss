@@ -92,6 +92,12 @@
 
 .profil{
     display: flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flexbox;
+    gap: 10px;
     align-items: center;
     gap:10px;
   
