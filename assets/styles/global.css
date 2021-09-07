@@ -1,18 +1,18 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Raleway&display=swap'); */
-@font-face {
+/* @font-face {
   font-family: "Raleway";
   src:url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Raleway&display=swap');
-}
+} */
 @font-face {
   font-family: "Nunito";
-  src:url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+  src:url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap') format();
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Nunito;
+    font-family: 'Nunito',sans-serif;
 
 }
 

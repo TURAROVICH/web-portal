@@ -408,8 +408,17 @@ margin: 30px 0 0 0;
 }
 
 @media (max-width:1500px) {
+     input{
+         width: 94%;
+    }
+    .btn{
+       width: 94%;
+    }
+    .about-reg{
+         width: 94%;
+    }
     .select{
-        width: 367px;
+        width: 94%;
     }
 }
 </style>

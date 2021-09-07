@@ -1,7 +1,7 @@
 <template>
     <div class="root">
         <div class="header z-50 fixed top-0 left-0">
-            <img src="@/assets/imgs/main/logo.png" alt="">
+            <img @click="$router.push('/')" class="cursor-pointer" src="@/assets/imgs/main/logo.png" alt="">
 
             <div class="profile">
                 <div class="full-name">Администратор</div>
