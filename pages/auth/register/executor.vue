@@ -1,14 +1,13 @@
 <template>
     <div class="form  flex flex-col ">
         <masked-input
-      type="text"
-      name="phone"
-      class="form-control"
-      v-model="phone"
-      :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
-      :guide="false"
-      placeholder="телефон">
-    </masked-input>
+                                type="text"
+                                name="phone"
+                                class="form-control"
+                                :mask="['+',7,'(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                                :guide="false"
+                                placeholder="Номер телефона">
+                                </masked-input>
         <div class="flex items-center i gap-2 mb-4 relative">
             <input type="text"   placeholder="никнейм">
                 <svg class="s-1"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,9 +47,9 @@
             <checkbox desc="Согласен c <a href='https://osc.gov/Shared%20Documents/Set%20Adobe%20as%20the%20defualt%20PDF%20program.pdf' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</a> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
         </div> 
-        <div class="btn cursor-pointer">
+        <button class="btn cursor-pointer">
             <span>Зарегистрироваться</span>
-        </div>
+        </button>
 
         <div  @click="$router.push('/auth/login/customer')" class="about-reg w-11/12 cursor-pointer">
             Отмена

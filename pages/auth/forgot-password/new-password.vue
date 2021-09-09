@@ -1,15 +1,15 @@
 <template>
     <div class="form mx-auto w-4/5 ">
     <div class="flex flex-col ">
-    <div class="explain-text">
+    <h1 class="explain-text">
         Придумайте новый пароль
-    </div>
+    </h1>
     <input type="text" class="w-full" id="email" placeholder="Пароль">
     <input type="text" class="w-full" id="email" placeholder="Повторите пароль">
 
-    <div  class="btn">
+    <button  class="btn">
         <span>Подтвердить</span>
-    </div>
+    </button>
     </div>
 
     

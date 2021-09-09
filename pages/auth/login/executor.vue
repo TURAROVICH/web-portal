@@ -3,18 +3,18 @@
         <input type="text" class="w-full" id="email" placeholder="Логин, почта или телефон">
         <input type="text" class="w-full" placeholder="Пароль">
         <checkbox desc="Запомнить меня"/>
-        <div class="btn cursor-pointer">
+        <button class="btn cursor-pointer">
             <span>Войти</span>
-        </div>
-        <div class="forgot-password cursor-pointer">Забыли пароль?</div>
+        </button>
+        <nuxt-link to="/auth/forgot-password/login" href="#" class="forgot-password cursor-pointer">Забыли пароль?</nuxt-link>
 
         <div class="not-acc">
             Нет аккаунта?
         </div>
 
-        <div @click="$router.push('/auth/register/customer')" class="btn btn-reg cursor-pointer">
+        <button @click="$router.push('/auth/register/customer')" class="btn btn-reg cursor-pointer">
             <span>Зарегистрироваться</span>
-        </div>
+        </button>
         <div class="about-reg">
             Регистрация займет меньше минуты
         </div>

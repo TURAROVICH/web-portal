@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <div class="header z-50 fixed top-0 left-0">
+        <header class="header z-50 fixed top-0 left-0">
             <svg class="cursor-pointer" width="125" height="40" viewBox="0 0 125 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M90.9685 25.7188C90.8491 25.3809 90.7893 25.0131 90.7893 24.6154C90.7893 24.2278 90.8441 23.8798 90.9536 23.5717C91.0731 23.2536 91.2324 22.9802 91.4315 22.7516C91.6306 22.5229 91.8695 22.349 92.1483 22.2297C92.437 22.1005 92.7556 22.0359 93.1041 22.0359C93.4625 22.0359 93.791 22.1005 94.0897 22.2297C94.3884 22.3589 94.6423 22.5428 94.8514 22.7814C95.0604 23.02 95.2247 23.3083 95.3442 23.6462C95.4637 23.9743 95.5234 24.3371 95.5234 24.7347C95.5234 25.1224 95.4637 25.4803 95.3442 25.8083C95.2347 26.1363 95.0754 26.4196 94.8663 26.6582C94.6672 26.8869 94.4233 27.0658 94.1345 27.195C93.8458 27.3242 93.5322 27.3888 93.1937 27.3888C92.8452 27.3888 92.5217 27.3193 92.223 27.1801C91.9343 27.0409 91.6804 26.8471 91.4613 26.5986C91.2523 26.3501 91.088 26.0568 90.9685 25.7188Z" fill="#2CC84D"/>
             <path d="M84.0588 27.4783C84.5267 27.4783 84.9598 27.3938 85.358 27.2248C85.7662 27.0459 86.0749 26.8123 86.2839 26.524C86.4731 26.3351 86.5677 26.1413 86.5677 25.9425V24.7944C85.9305 24.5459 85.2684 24.4216 84.5815 24.4216C83.9244 24.4216 83.3867 24.5608 82.9686 24.8391C82.5604 25.1174 82.3563 25.4803 82.3563 25.9276C82.3563 26.1463 82.3961 26.3501 82.4758 26.5389C82.5654 26.7278 82.6848 26.8918 82.8342 27.031C82.9935 27.1702 83.1777 27.2795 83.3867 27.359C83.5958 27.4386 83.8198 27.4783 84.0588 27.4783Z" fill="#2CC84D"/>
@@ -17,10 +17,10 @@
                 <div class="full-name">Администратор</div>
                 <img src="@/assets/imgs/main/Avatars.png" alt="" class="profile-img">
             </div>
-        </div>
+        </header>
 
-            <div style="margin-top:74px;" class="body min-h-screen w-full flex">
-                <div class="nav">
+            <main style="margin-top:74px;" class="body min-h-screen w-full flex">
+                <nav class="nav">
                     <nuxt-link to="/" :class="{'active':r=='/'}">
                     <div class="nav-link">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,13 +62,13 @@
                     </div>
                     </nuxt-link>
 
-                </div>
+                </nav>
                 <div class="nuxt w-full">
                     <Nuxt/>
                 </div>
-            </div>
+            </main>
 
-        <div class="footer flex justify-between">
+        <footer class="footer flex justify-between">
             <div class="flex flex-col gap-2">
                 <img width="142" height="72" src="@/assets/imgs/main/Union.png" alt="">
                 <div class="about">© 2015-2021 ООО «1Дар» <br> Все права защищены</div>
@@ -78,22 +78,22 @@
             <div class="footer-nav">
                 <div class="flex flex-col">
                     <div class="title">Меню</div>
-                    <div class="link">Главная</div>
-                    <div class="link">Биржа</div>
-                    <div class="link">Обучение</div>
-                    <div class="link">Мои задания</div>
-                    <div class="link">Чат</div>
-                    <div class="link">Обратная связь</div>
-                    <div class="link">Портфолио</div>
+                    <nuxt-link to="#" class="link">Главная</nuxt-link>
+                    <nuxt-link to="#" class="link">Биржа</nuxt-link>
+                    <nuxt-link to="#" class="link">Обучение</nuxt-link>
+                    <nuxt-link to="#" class="link">Мои задания</nuxt-link>
+                    <nuxt-link to="#" class="link">Чат</nuxt-link>
+                    <nuxt-link to="#" class="link">Обратная связь</nuxt-link>
+                    <nuxt-link to="#" class="link">Портфолио</nuxt-link>
                 </div>
                  <div class="flex flex-col">
                     <div class="title">Соцсети</div>
-                    <div class="link">VK</div>
-                    <div class="link">Facebook</div>
-                    <div class="link">Twitter</div>
+                    <a href="#" class="link">VK</a>
+                    <a href="#" class="link">Facebook</a>
+                    <a href="#" class="link">Twitter</a>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 </template>
 

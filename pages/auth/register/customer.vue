@@ -1,7 +1,5 @@
 <template>
     <div class="form  flex flex-col ">
-       <!-- <v-select :options="options" id="select" class="select"  v-model="selected"></v-select>
-        -->
         <div  class="select mb-4">
             <span :class="{'small':selected}">Я являюсь</span> 
             <div class="selected" v-if="selected" v-html="selected"></div>
@@ -41,15 +39,14 @@
         </div>
 
          <div v-if="sel==='Физическое лицо'" class="flex items-center g-2 relative mb-4">
-                <masked-input
-      type="text"
-      name="phone"
-      class="form-control"
-      v-model="phone"
-      :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
-      :guide="false"
-      placeholder="телефон">
-    </masked-input>
+             <masked-input
+                                type="text"
+                                name="phone"
+                                class="form-control"
+                                :mask="['+',7,'(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                                :guide="false"
+                                placeholder="Номер телефона">
+                                </masked-input>
                 <svg class="s-2"  style="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9.08984 8.99999C9.32495 8.33166 9.789 7.7681 10.3998 7.40912C11.0106 7.05015 11.7287 6.91893 12.427 7.0387C13.1253 7.15848 13.7587 7.52151 14.2149 8.06352C14.6712 8.60552 14.9209 9.29151 14.9198 9.99999C14.9198 12 11.9198 13 11.9198 13" stroke="#6A7489" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,9 +75,9 @@
             <checkbox desc="Согласен c <a href='https://osc.gov/Shared%20Documents/Set%20Adobe%20as%20the%20defualt%20PDF%20program.pdf' class='cursor-pointer' style='color:#2CC84D;margin-left:4px;'>Пользовательским соглашением</a> "/>
             <checkbox desc="Согласен получать информационные письма от сервиса"/>
         </div> 
-        <div class="btn cursor-pointer">
+        <button class="btn cursor-pointer">
             <span>Зарегистрироваться</span>
-        </div>
+        </button>
 
         <div @click="$router.push('/auth/login/customer')" class="about-reg w-11/12 cursor-pointer">
             Отмена

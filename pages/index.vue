@@ -5,13 +5,13 @@
             <img src="@/assets/imgs/test/profile.png" alt="">
         </div>
         <div>
-          <div class="full-name">Администратор</div>
+          <h2 class="full-name">Администратор</h2>
         </div>
       </div>
 
 
       <div class="request">
-        <div class="title">Заявки</div>
+        <h3 class="title">Заявки</h3>
         <div class="search-container">
           <div class="search">
               <input type="text" placeholder="Поиск">

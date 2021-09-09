@@ -6,37 +6,42 @@
                 <rect width="32" height="32" rx="10" fill="#6A7489" fill-opacity="0.3"/>
                 <path d="M20 8L12 16L20 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                <div class="close-title">Подробнее</div>
+                <h2 class="close-title">Подробнее</h2>
 
             </div>
 
             <div class="body">
                 <div class="profile">
                     <img width="128" height="128" src="@/assets/imgs/test/profile.png" alt="">
-                    <div class="title">Камила Ковалёва</div>
+                    <h2 class="title">Камила Ковалёва</h2>
                     <div class="is-online"></div>
                 </div>
 
-            <div class="message">
+            <h3 class="message">
                 Augue donec nec cras sed ac, facilisi enim erat.
-            </div>
+            </h3>
             <div class="date">19.07.2021</div>
                 
             <div class="desc">
                 Lacus, aliquam commodo molestie aliquam. Gravida ante tincidunt est nulla. Mattis malesuada et ultrices quam mauris magna quis facilisis donec. Viverra duis tempus tellus morbi. At feugiat sed sed suspendisse lorem ullamcorper at adipiscing aenean. Faucibus ultrices aliquet morbi purus cursus. Donec viverra mauris adipiscing lectus.
             </div>
-            <div style="margin:40px 0 16px 0;" class="form__group field">
-                            <input type="input" class="form__field" placeholder="Name" name="name" id='n' required />
-                            <label for="n" class="form__label">Номер телефона</label>
-            </div>
+            <masked-input
+            style="margin:40px 0 16px 0;width:100%;"
+            type="text"
+            name="phone"
+            class="form-control"
+            :mask="['+',7,'(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+            :guide="false"
+            placeholder="Номер телефона">
+            </masked-input>
             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='e' required />
                             <label for="e" class="form__label">Email</label>
             </div>
 
-             <div class="btn-1">
+             <button class="btn-1">
                         <span>Прочитано</span>
-                    </div>
+                </button>
             </div>
         </div>
     </div>
@@ -187,5 +192,19 @@ color: #252A36;
         }
     }
 
+}
+
+input{
+    max-width: 360px;
+    height: 56px;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    /* Text/Tertiary */
+
+    border: 1px solid rgba(106, 116, 137, 0.3);
+    box-sizing: border-box;
+    border-radius: 16px;
+    outline: none;
+  transition: all 0.2s;
 }
 </style>

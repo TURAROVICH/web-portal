@@ -6,19 +6,19 @@
                 <rect width="32" height="32" rx="10" fill="#6A7489" fill-opacity="0.3"/>
                 <path d="M20 8L12 16L20 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                <div class="close-title">Подробнее</div>
+                <h3 class="close-title">Подробнее</h3>
 
             </div>
 
             <div class="body">
                 <div class="profile">
                     <img width="128" height="128" src="@/assets/imgs/test/profile.png" alt="">
-                    <div class="title">MAG Interactive</div>
+                    <h1 class="title">MAG Interactive</h1>
                 </div>
 
                 <div class="grid-inputs-cnt">
                     <div class="form">
-                        <div class="form-title">О компании</div>
+                        <h4 class="form-title">О компании</h4>
                         <div class="inputs">
                             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
@@ -36,15 +36,14 @@
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
                             <label for="name" class="form__label">Должность руководителя</label>
                             </div>
-                            <div style="margin-top:18px;" class="form-title">Контакты</div>
+                            <h4 style="margin-top:18px;" class="form-title">Контакты</h4>
                             <masked-input
                                 type="text"
                                 name="phone"
                                 class="form-control"
-                                v-model="phone"
-                                :mask="['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
+                                :mask="['+',7,'(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]"
                                 :guide="false"
-                                placeholder="Телефон">
+                                placeholder="Номер телефона">
                                 </masked-input>
                             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
@@ -53,7 +52,7 @@
                         </div>
                     </div>
                     <div class="form">
-                        <div class="form-title">Реквизиты</div>
+                        <h4 class="form-title">Реквизиты</h4>
                         <div class="inputs">
                             <div class="form__group field">
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
@@ -88,12 +87,12 @@
                     </div>
                 </div>
                 <div class="btns">
-                    <div class="btn-1">
+                    <button class="btn-1">
                         <span>Зарегистрировать</span>
-                    </div>
-                    <div class="btn-2">
+                    </button>
+                    <button class="btn-2">
                         <span>Отправить на доработку</span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>

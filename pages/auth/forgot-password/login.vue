@@ -5,12 +5,12 @@
         Введите свой адрес электронной почты ниже, и мы отправим вам ссылку для сброса пароля.
     </div>
     <input type="text" class="w-full" id="email" placeholder="Email">
-    <div @click="sended=true" class="btn">
+    <button @click="sended=true" class="btn">
         <span>Восстановить</span>
-    </div>
-    <div @click="$router.push('/auth/login/customer')" class="btn btn-reg">
+    </button>
+    <nuxt-link to="/auth/login/customer" class="btn btn-reg">
         <span>Войти</span>
-    </div>
+    </nuxt-link>
     </div>
 
     <div v-else class="flex flex-col justify-center">
@@ -24,9 +24,9 @@
             Перейдите по ссылке в электронном письме, которое мы отправили, чтобы завершить сброс пароля.
         </div>
 
-        <div @click="$router.push('/auth/login/customer')" class="to-log">
+        <nuxt-link to="/auth/login/customer" class="to-log">
             Вернуться ко входу
-        </div>
+        </nuxt-link>
 
     </div>
 
